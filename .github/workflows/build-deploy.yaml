@@ -67,7 +67,7 @@ jobs:
         platform: [linux-amd64, linux-arm64]
         include:
           - platform: linux-amd64
-            runner: buildjet-4vcpu-ubuntu-2204
+            runner: ubuntu-latest
 
           - platform: linux-arm64
             runner: buildjet-8vcpu-ubuntu-2204-arm
