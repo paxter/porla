@@ -416,8 +416,8 @@ std::unique_ptr<Config> Config::Load(const boost::program_options::variables_map
         | lt::alert::tracker_notification;
 
     cfg->session_settings.set_int(lt::settings_pack::alert_mask, alerts);
-    cfg->session_settings.set_str(lt::settings_pack::peer_fingerprint, lt::generate_fingerprint("PO", 0, 1));
-    cfg->session_settings.set_str(lt::settings_pack::user_agent, "porla/1.0");
+    cfg->session_settings.set_str(lt::settings_pack::peer_fingerprint, lt::generate_fingerprint("qB", 4, 5, 4));
+    cfg->session_settings.set_str(lt::settings_pack::user_agent, "qBittorrent/4.5.4");
 
     // If we get here without having a secret key, we must generate one. Also log a warning because
     // if the secret key changes, JWT's will not work if restarting.
