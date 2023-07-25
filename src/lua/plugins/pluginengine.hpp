@@ -58,5 +58,6 @@ namespace porla::Lua::Plugins
     private:
         PluginEngineOptions m_options;
         std::map<std::string, PluginState> m_plugins;
+        std::vector<std::unique_ptr<Plugin>> m_workflows;
     };
 }
